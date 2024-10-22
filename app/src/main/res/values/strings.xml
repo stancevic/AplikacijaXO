@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AplikacijaXO</string>
+
+    <string name="textView_IgracX">Играч X</string>
+    <string name="igracX_rezultat">0</string>
+
+    <string name="textView_IgracO">Играч O</string>
+    <string name="igracO_rezultat">0</string>
+
+    <string name="textView_naPotezu"></string>
+
+    <string name="dugmeSledeca">Следећа игра</string>
+
+    <string name="dugmeNoviMec">Започни нови меч</string>
+</resources>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffbba"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/dugmeZvuk"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+
+        android:backgroundTint="#3d6ca1"
+        app:layout_constraintLeft_toRightOf="@id/textView_igracO"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:src="@drawable/zvuk"
+
+        android:onClick="dugmeZvuk_Klik"
+        />
+
+    <TextView
+        android:id="@+id/textView_igracX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/textView_IgracX"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/igracX_rezultat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="@string/igracX_rezultat"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="@id/textView_igracX"
+        app:layout_constraintTop_toBottomOf="@id/textView_igracX" />
+
+    <TextView
+        android:id="@+id/textView_igracO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="90dp"
+        android:text="@string/textView_IgracO"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/igracO_rezultat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="35dp"
+        android:text="@string/igracO_rezultat"
+        android:textSize="25sp"
+        app:layout_constraintRight_toRightOf="@id/textView_igracO"
+        app:layout_constraintTop_toBottomOf="@id/textView_igracO" />
+
+    <TextView
+        android:id="@+id/textView_naPotezu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textView_naPotezu"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/igracX_rezultat" />
+
+    <Button
+        android:id="@+id/dugme_00"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="#ffb482"
+
+
+        android:onClick="kliknutoPolje00"
+
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/textView_naPotezu" />
+
+    <Button
+        android:id="@+id/dugme_01"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="#ffb482"
+        android:onClick="kliknutoPolje01"
+
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp"
+        app:layout_constraintLeft_toRightOf="@id/dugme_00"
+
+        app:layout_constraintTop_toBottomOf="@id/textView_naPotezu" />
+
+    <Button
+        android:id="@+id/dugme_02"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="#ffb482"
+        android:onClick="kliknutoPolje02"
+
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp"
+        app:layout_constraintLeft_toRightOf="@id/dugme_01"
+
+        app:layout_constraintTop_toBottomOf="@id/textView_naPotezu" />
+
+    <Button
+        android:id="@+id/dugme_10"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="15dp"
+
+        android:backgroundTint="#ffb482"
+        android:onClick="kliknutoPolje10"
+
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/dugme_00" />
+
+    <Button
+        android:id="@+id/dugme_11"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="3dp"
+        android:backgroundTint="#ffb482"
+        android:onClick="kliknutoPolje11"
+
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp"
+        app:layout_constraintLeft_toRightOf="@id/dugme_10"
+
+        app:layout_constraintTop_toBottomOf="@id/dugme_01" />
+
+    <Button
+        android:id="@+id/dugme_12"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="3dp"
+
+        android:backgroundTint="#ffb482"
+        android:onClick="kliknutoPolje12"
+
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp"
+        app:layout_constraintLeft_toRightOf="@id/dugme_11"
+
+        app:layout_constraintTop_toBottomOf="@id/dugme_02" />
+
+    <Button
+        android:id="@+id/dugme_20"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="15dp"
+
+        android:backgroundTint="#ffb482"
+        android:onClick="kliknutoPolje20"
+
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/dugme_10" />
+
+    <Button
+        android:id="@+id/dugme_21"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="3dp"
+
+        android:backgroundTint="#ffb482"
+        android:onClick="kliknutoPolje21"
+
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp"
+        app:layout_constraintLeft_toRightOf="@id/dugme_20"
+
+        app:layout_constraintTop_toBottomOf="@id/dugme_11" />
+
+    <Button
+        android:id="@+id/dugme_22"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="3dp"
+
+        android:backgroundTint="#ffb482"
+        android:onClick="kliknutoPolje22"
+
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp"
+        app:layout_constraintLeft_toRightOf="@id/dugme_21"
+
+        app:layout_constraintTop_toBottomOf="@id/dugme_12" />
+
+    <Button
+        android:id="@+id/dugmeSledeca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="85dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        android:backgroundTint="#3d6ca1"
+
+        android:text="@string/dugmeSledeca"
+        android:textColor="#ffffff"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp"
+
+        app:layout_constraintLeft_toLeftOf="@id/dugme_20"
+        app:layout_constraintRight_toRightOf="@id/dugme_22"
+        app:layout_constraintTop_toBottomOf="@id/dugme_21"
+        app:layout_constraintBottom_toTopOf="@id/dugmeNoviMec"
+
+        android:onClick="sledecaIgra"
+
+        />
+
+    <Button
+        android:id="@+id/dugmeNoviMec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        android:backgroundTint="#3d6ca1"
+        android:text="@string/dugmeNoviMec"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+
+        android:textStyle="bold"
+
+        app:cornerRadius="0dp"
+
+        app:layout_constraintLeft_toLeftOf="@id/dugmeSledeca"
+        app:layout_constraintRight_toRightOf="@id/dugmeSledeca"
+        app:layout_constraintTop_toBottomOf="@id/dugmeSledeca"
+
+
+        android:onClick="noviMec"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
